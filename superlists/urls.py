@@ -1,3 +1,4 @@
+from lists import views
 """
 URL configuration for superlists project.
 
@@ -18,5 +19,5 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', views.home_page, name='home'),
 ]
